@@ -1,0 +1,175 @@
+.carrossel__titulo {
+    background-color: var(--branco);
+    color: var(--laranja);
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 1rem 0 0.5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.carrossel__titulo--mais-vendidos {
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.swiper-slide img {
+    width: 32vw;
+}
+
+.swiper-pagination {
+    margin: 0.75rem 0 1rem 0;
+    position: initial;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-scrollbar {
+    display: none;
+}
+
+.card {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 1.5rem 1.5rem 1rem 1.5rem;
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.card__conteudo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__info {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.card__titulo {
+    color: var(--laranja);
+    font-weight: 700;
+    line-height: 1.5rem;
+}
+
+.card__livro {
+    color: var(--azul-escuro);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.card__texto {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+}
+
+.card__acoes {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__favoritos {
+    padding-right: 0.5rem;
+}
+
+.card__favoritos img {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.card__saiba-mais {
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    line-height: 1.5rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    text-decoration: none;
+    width: 10.125rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font-size: 1.625rem;
+        line-height: 2.4375rem;
+        padding: 3.1875rem 0 1rem 0;
+    }
+
+    .swiper {
+        width: 60%;
+    }
+
+    .swiper-pagination {
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper-slide img {
+        width: 17vw;
+    }
+
+    .swiper-slide img:hover {
+        box-shadow: 0px 10px 10px rgba(4, 4, 5, 0.25);
+    }
+
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        margin: 3.875rem auto 3rem auto;
+        width: 50%;
+    }
+
+    .card__conteudo {
+        margin-bottom: 1.25rem;
+    }
+
+    .card__info {
+        justify-content: space-evenly;
+    }
+
+    .card__saiba-mais:active {
+        background-color: var(--azul-escuro);
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__container {
+        align-items: center;
+        display: flex;
+        margin: 5rem 10vw 7.5rem 10vw;
+    }
+
+    .card {
+        margin: 0 1rem;
+        width: 34vw;
+    }
+
+    .card__info {
+        margin-right: 2rem;
+    }
+
+    .card__titulo {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .card__texto {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .swiper-pagination {
+      margin: 1rem 0;
+    }
+
+    .swiper-slide img {
+        width: 10vw;
+    }
+}
